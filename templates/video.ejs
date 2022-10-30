@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <title>Document</title>
+    <style>
+         img{
+            width: 100px;
+            height: 70px;
+            margin-left: 50px;
+         
+        }
+        .bg{
+            background-color: aliceblue;
+        }
+        .nav{
+            background-color: white;
+            width: 1530px;
+            height: 100px;
+        }
+        .srch{
+            padding: 5px 5px;
+            width: 500px;
+            height: 40px;
+            margin-left: 200px;
+            margin-top: 20px;
+            
+        }
+        .btnn{
+            width: 80px;
+            height: 40px;
+            margin-top: 20px;
+        }
+        .mic{
+            width: 15px;
+            height:20px;
+            margin-top: 20px;
+        }
+        .material-icon{
+            margin-top: 20px;
+        }
+        .video{
+            width: 932px;
+            height: 524px;
+        }
+    </style>
+</head>
+<body class="bg">
+    <div class="nav">
+        <i class="material-icons">menu</i><img src="./static/logo.jpg">
+        <input type="text" name="search" placeholder="Search" class="srch"><button class="btnn">Search</button>
+        <img src="./static/mic.webp" class="mic">
+    </div>
+    <div class="col-6">
+        <iframe class="video" src="https://www.youtube.com/embed/<%=link%>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

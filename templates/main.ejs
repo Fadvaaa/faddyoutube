@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Document</title>
+    <style>
+         img{
+            width: 100px;
+            height: 70px;
+            margin-left: 50px;
+         
+        }
+        .bg{
+            background-color: aliceblue;
+        }
+        .nav{
+            background-color: white;
+            width: 1530px;
+            height: 100px;
+        }
+        .srch{
+            padding: 5px 5px;
+            width: 500px;
+            height: 40px;
+            margin-left: 200px;
+            margin-top: 20px;
+            
+        }
+        .btnn{
+            width: 80px;
+            height: 40px;
+            margin-top: 20px;
+        }
+        .mic{
+            width: 15px;
+            height:20px;
+            margin-top: 20px;
+        }
+        .material-icon{
+            margin-top: 20px;
+        }
+        .vertical{
+            width: 200px;
+            height: 120vh;
+            background-color: white;
+        }
+        .pp{
+            background-color: white;
+            margin-left:300px;
+            margin-top: -800px;
+            width: 1200px;
+            height:100vh
+        
+        }
+        .v1{
+          
+           margin-top: 30px;
+        }
+    </style>
+</head>
+<body class="bg">
+    <div class="nav">
+        <i class="material-icons">menu</i><img src="/images/logo.jpg">
+        <input type="text" name="search" placeholder="Search" class="srch"><button class="btnn">Search</button>
+        <button style="height: 40px; margin-top: 20px; margin-left: 100px;"><i class="material-icons">notifications</i></button>
+    </div>
+    <div class="vertical">
+        <div class="container">
+            
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-action active">HOME</li>
+              <li class="list-group-item list-group-item-action">EXPLORE</li>
+              <li class="list-group-item list-group-item-action">SHORTS</li>
+              <li class="list-group-item list-group-item-action">SUBSCRIPTION</li>
+            </ul>
+            <hr>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-action">YOUR VIDEO</li>
+                <li class="list-group-item list-group-item-action">LIBRARY</li>
+                <li class="list-group-item list-group-item-action">HISTORY</li>
+                <li class="list-group-item list-group-item-action">WATCH LATER</li>
+                <li class="list-group-item list-group-item-action">LIKED VIDEOS</li>
+              </ul>
+              <hr>
+              <h5 style="color: grey;">Subscription</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-action">MAITREYI RAMAKRISHNAN</li>
+                <li class="list-group-item list-group-item-action">KARIKKU FLIK</li>
+                <li class="list-group-item list-group-item-action">HANIA AMIR</li>
+                <li class="list-group-item list-group-item-action">TIKTOK COMPILATION</li>
+                <li class="list-group-item list-group-item-action">SIA</li>
+              </ul>
+        </div>      
+    </div>
+        <div class="pp">
+           <div class="row">
+            <% videos.forEach((v)=>{ %>
+                <div class="col-12 col-md-4">
+                    <a href="/play/<%=v.link%>"><img src="/images/<%=v.thumbnail%>" style="margin-bottom: 50px;width: 350px;height: 250px;"></a>
+                </div>
+            <% })%>
+
+            
+           </div>
+        </div>
+    
+      
+   
+    
+</body>
+</html>
